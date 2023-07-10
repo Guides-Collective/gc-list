@@ -21,11 +21,39 @@
         }
         .footer {
             text-align: center;
-            padding: 10px;
-            background: #f8f8f8;
-            border-top: 1px solid #ddd;
             position: relative;
-            bottom: 0;
+            height: 80px;
+            padding: 0;
+            background-color: #7D8975;
+            margin-bottom: 56px;
+        }
+        .landing-page-footer{
+            display: flex;
+            position: relative;
+            height: 100%;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .landing-page-footer a{
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        .landing-page-footer-left, .landing-page-footer-right{
+            display: flex;
+            align-items: center;
+        }
+        .landing-page-footer-divider{
+            vertical-align: middle;
+            display: inline-block;
+            height: 40px;
+            width: 1px;
+            margin: 0 32px;
+            background-color: white;
         }
         .container {
             margin: 50px auto;
@@ -237,7 +265,7 @@
             </div>
             <div class="landing-page-footer-right container-center">
                 <a href="https://mightynetworks.com/terms_of_use" target="_blank">Terms of Use</a>
-                <span>|</span>
+                <span class="footer-terms-separator">|</span>
                 <a href="https://mightynetworks.com/privacy_policy" target="_blank">Privacy Policy</a>
             </div>
         </div>
