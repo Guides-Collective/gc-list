@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet">
     <title>My GitHub Page</title>
     <style>
         /* Please replace with your own CSS or link to an external css file */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', sans-serif;
             margin: 0;
         }
         .header {
@@ -63,7 +64,7 @@
         .header-container h1{
             margin-top: 30px;
             margin-bottom: 20px;
-            font-family: "Mulish","Helvetica Neue","Mulish-Fallback-To-Arial",sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            font-family: 'Helvetica Neue', sans-serif;
             font-size: 44px;
             font-weight: 700;
             line-height: 60px;
@@ -82,6 +83,7 @@
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 60px;
             z-index: 1;
         }
         .header-avatar{
@@ -113,7 +115,7 @@
             line-height: 19px;
             border-radius: 4px;
             text-decoration: none;
-            font-family: "Mulish","Helvetica Neue","Mulish-Fallback-To-Arial",sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            font-family: 'Helvetica Neue', sans-serif;
             transition: 0.2s ease-in-out;
         }
         .request-button:hover{
@@ -121,6 +123,7 @@
         }
         .header-nav{
             position: absolute;
+            top: 0;
             box-sizing: border-box;
             background-color: rgb(255,255,255,0.2);
             height: 60px;
@@ -137,6 +140,35 @@
             margin: 0 auto;
             align-items: center;
             justify-content: space-between;
+        }
+        .avatar-xsmall{
+            border-radius: 32px;
+            box-sizing: border-box;
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: middle;
+            position: relative;
+        }
+        .navbar-right ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .navbar-right li{
+            float: left;
+        }
+        .navbar-right li a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        .navbar-right li:last-of-type{
+            margin-left: 48px;
         }
         @media only screen and (max-width: 828px){
             .header-container h1{
@@ -165,10 +197,10 @@
                     <div class="navbar-right">
                         <ul class="creator-landing-page-navbar-account-buttons unstyled center-this">
                             <li>
-                                <a class="request-link text-color-white-link" href="https://guidescollective.com/sign_up?from=https%3A%2F%2Fguidescollective.com%2F" data-ol-has-click-handler="">Request to Join</a>
+                                <a href="https://guidescollective.com/sign_up?from=https%3A%2F%2Fguidescollective.com%2F" data-ol-has-click-handler="">Request to Join</a>
                             </li>
                             <li>
-                                <a class="sign-in-button text-color-white-link " href="https://guidescollective.com/sign_in?from=https%3A%2F%2Fguidescollective.com%2F" data-ol-has-click-handler="">Sign In</a>
+                                <a href="https://guidescollective.com/sign_in?from=https%3A%2F%2Fguidescollective.com%2F" data-ol-has-click-handler="">Sign In</a>
                             </li>
                         </ul>
                     </div>
