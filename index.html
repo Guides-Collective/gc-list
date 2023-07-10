@@ -8,12 +8,14 @@
         /* Please replace with your own CSS or link to an external css file */
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
         }
         .header {
             text-align: center;
             padding: 10px;
             background: #f8f8f8;
             border-bottom: 1px solid #ddd;
+            padding: 0;
         }
         .footer {
             text-align: center;
@@ -45,12 +47,25 @@
             background-position: center;
             height: 700px;
             color: #ffffff;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mighty-image-overlay-dark-30{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(25,31,40,0.3);
         }
     </style>
 </head>
 <body>
     <div class="header">
         <div class="header-container">
+            <div class="mighty-image-overlay-dark-30"></div>
             <h1>Welcome to Guides Collective</h1>
         </div>
     </div>
