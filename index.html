@@ -69,7 +69,6 @@
             line-height: 60px;
             padding: 5px 0;
             word-break: break-word;
-            z-index: 1;
         }
         .header-container h2{
             max-width: 700px;
@@ -78,12 +77,12 @@
             font-weight: 700;
             line-height: 30px;
             word-break: break-word;
-            z-index: 1;
         }
         .header-title-container{
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
+            z-index: 1;
         }
         .header-avatar{
             border-radius: 128px;
@@ -93,25 +92,32 @@
             overflow: hidden;
             vertical-align: middle;
             position: relative;
-            z-index: 1;
         }
         .header-button{
             position: relative;
             min-height: 32px;
             margin-top: 68px;
-            z-index: 1;
         }
         .request-button{
             position: relative;
             display: inline-block;
+            box-sizing: border-box;
             min-width: 240px;
             margin-bottom: 10px;
             background-color: #c8b8a4;
             color: #000000cc;
             padding: 16px 25px 17px;
             font-size: 16px;
+            font-weight: 500;
+            white-space: nowrap;
             line-height: 19px;
             border-radius: 4px;
+            text-decoration: none;
+            font-family: "Mulish","Helvetica Neue","Mulish-Fallback-To-Arial",sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            transition: 0.2s ease-in-out;
+        }
+        .request-button:hover{
+            background-color: #AB9374;
         }
         @media only screen and (max-width: 828px){
             .header-container h1{
