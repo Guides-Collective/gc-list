@@ -119,6 +119,25 @@
         .request-button:hover{
             background-color: #AB9374;
         }
+        .header-nav{
+            position: absolute;
+            box-sizing: border-box;
+            background-color: rgb(255,255,255,0.2);
+            height: 60px;
+            width: 100%;
+            text-align: center;
+            z-index: 1;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+        .header-nav-inner{
+            display: flex;
+            position: relative;
+            height: 100%;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: space-between;
+        }
         @media only screen and (max-width: 828px){
             .header-container h1{
                 margin: 10px 0;
@@ -138,6 +157,23 @@
     <div class="header">
         <div class="header-container">
             <div class="mighty-image-overlay-dark-30"></div>
+            <div class="header-nav">
+                <div class="header-nav-inner">
+                    <div class="navbar-left">
+                        <img class="avatar-xsmall" src="https://media1-production-mightynetworks.imgix.net/asset/47196779/1.png">
+                    </div>
+                    <div class="navbar-right">
+                        <ul class="creator-landing-page-navbar-account-buttons unstyled center-this">
+                            <li>
+                                <a class="request-link text-color-white-link" href="https://guidescollective.com/sign_up?from=https%3A%2F%2Fguidescollective.com%2F" data-ol-has-click-handler="">Request to Join</a>
+                            </li>
+                            <li>
+                                <a class="sign-in-button text-color-white-link " href="https://guidescollective.com/sign_in?from=https%3A%2F%2Fguidescollective.com%2F" data-ol-has-click-handler="">Sign In</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="header-title-container">
                 <img class="header-avatar" src="https://media1-production-mightynetworks.imgix.net/asset/47196779/1.png">
                 <h1>Welcome to Guides Collective</h1>
